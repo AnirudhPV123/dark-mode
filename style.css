@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-body{
+    height: 100vh;
+    width: 100%;
+    background: var(--primary-color);
+    font-family: sans-serif;
+    position: relative;
+}
+
+nav{
+    width: 88%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    padding-top: 20px;
+    width: 100px;
+    cursor: pointer;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px ;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+
+nav ul{
+    flex: 1;           /*used to set the item in right*/
+    text-align: right;
+}
+
+:root{
+    --primary-color:#edf2fc;
+    --secondary-color:#212121;
+}
+
+.dark-theme{
+    --primary-color:#000106;
+    --secondary-color:#fff;
+}
+
+.info{
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+.info h1{
+    font-size: 70px;
+    padding-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.info span{
+    color: rgb(221, 87, 10);
+}
+
+.info p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--secondary-color);
+}
+
+.info a{
+    text-decoration: none;
+    display: inline-block;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 12px;
+    padding: 10px 18px;
+    border-radius: 7px;
+    margin: 30px 0;
+    transition: 0.5s;
+}
+
+.info a:hover{
+    background:  rgb(221, 87, 10);;
+}
+
+.image-box{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0;
+    right: 100px;
+}
+
+.image-box img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s , left 1s;
+}
+
+.image-box:hover .image-back{
+    bottom: 40px;
+}
+
+.image-box:hover .image-main{
+    left: 54%;
+}
+
+.social-media{
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+.social-media a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin-right: 20px;
+}
+
+.social-media a:hover{
+    color: rgb(253, 86, 8);
+}
+
